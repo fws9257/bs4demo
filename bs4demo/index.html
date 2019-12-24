@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>某管理系统</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="navbar fixed-top navbar-dark bg-primary">
+				<a class="navbar-brand" href="#">某管理系统</a>
+				<div class="dropdown">
+					<a class="navbar-brand dropdown-toggle" id="ld" href="#" data-toggle="dropdown">用户操作</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="#">个人中心</a>
+						<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">退出</a>
+					</div>
+				</div>
+			</nav>
+				<ul class="left-box pt-3" class="btn1">
+					<li class="active"><a href="index.html">首页</a></li>
+					<li><a href="user.html">用户中心</a></li>
+					<li><a href="search.html">数据查询</a></li>
+					<li><a href="data.html">数据面板</a></li>
+					<li><a href="tip.html">提醒事项<span class="ml-3 badge badge-pill badge-warning">4</span></a></li>
+				</ul>
+		</div>
+	</div>
+	<div class="rightbox">
+		<nav aria-label="breadcrumb">
+		  <ol class="breadcrumb">
+		    <li class="breadcrumb-item active" aria-current="page">首页</li>
+		  </ol>
+		</nav>
+		<div class="container-fluid">
+			<div class="row">
+			  <div class="col-lg-4">
+			    <div class="card mb-2 text-light bg-success">
+			     <div class="card-body">
+			        <h5 class="card-title">当前用户总数</h5>
+			        <p class="card-text display-3">120,123</p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-lg-4">
+			    <div class="card mb-2 text-light bg-primary">
+			      <div class="card-body">
+			        <h5 class="card-title">每日平均活跃用户数</h5>
+			        <p class="card-text display-3">1,123</p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-lg-4">
+			    <div class="card mb-2 text-light bg-warning">
+			      <div class="card-body">
+			        <h5 class="card-title">每日平均访问次数</h5>
+			        <p class="card-text display-3">3,123</p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script>
+  var flag = true;
+  var ld=document.getElementById('ld');
+  ld.onclick=function(){
+    if(flag == true) {
+              ld.style.color="#fff";
+              flag = false;
+            } else {
+              ld.style.color=" #7fbdff";
+              flag = true;
+            }
+  			}
+	</script>
+</body>
+</html>
